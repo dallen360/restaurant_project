@@ -1,0 +1,48 @@
+.overview {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10rem;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+
+  &__primary {
+    font-weight: 400;
+    font-size: 6rem;
+    background-color: rgb(104, 160, 104);
+    display: inline-block;
+    padding: 1rem 3rem;
+    margin-bottom: 3rem;
+
+    &:hover {
+      color: rgb(104, 160, 104);
+      background-color: white;
+    }
+  }
+
+  &__secondary {
+    font-weight: 400;
+    font-size: 4rem;
+    background-color: rgb(104, 160, 104);
+    padding: 1rem 3rem;
+    margin-bottom: 3rem;
+    &:hover {
+      color: rgb(104, 160, 104);
+      background-color: white;
+    }
+  }
+
+  &__tertiary {
+    font-weight: 400;
+    font-size: 5rem;
+    background-color: white;
+    color: rgb(104, 160, 104);
+    padding: 1rem 3rem;
+
+    &:hover {
+      color: white;
+      background-color: rgb(104, 160, 104);
+    }
+  }
+}

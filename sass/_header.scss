@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 3rem auto;
+
+  &__top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: white;
+  }
+
+  &__text {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__title {
+    margin-left: 2rem;
+    font-weight: 200;
+    font-size: 6rem;
+    line-height: 110%;
+  }
+
+  &__logo {
+    height: 10rem;
+  }
+
+  &__phone {
+    font-weight: 200;
+    font-size: 3.5rem;
+    line-height: 130%;
+  }
+  ////////////////////////@at-root
+  &__bottom {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    & > li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(104, 160, 104);
+      box-shadow: 10px 5px 15px 5px #000000;
+
+      transition: all 0.2s;
+      width: 30rem;
+      height: 10rem;
+
+      &#bold {
+        background-color: white;
+      }
+
+      &:hover {
+        transform: translateY(-0.5rem);
+      }
+    }
+  }
+
+  &__item {
+    font-size: 4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+
+    &--bold {
+      color: green;
+    }
+  }
+}
